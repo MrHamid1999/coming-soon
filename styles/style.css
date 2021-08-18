@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url(../Image/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #ddd;
+    font-size: 14px;
+    font-family: montserrat , sans-serif;
+
+}
+body::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.74);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.Container{
+    z-index: 1;
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   justify-content: space-between;
+   line-height: 2;
+   height: 80%;
+}
+.Container .header{
+    font-size: 45px;
+    letter-spacing: 1.5;
+    text-transform:uppercase ;
+    color: rgb(142, 231, 169);
+    text-align: center;
+}
+.Container .subtitle{
+    font-size: 20px;
+    letter-spacing: 1.5;
+    margin-bottom: 20px;
+
+}
+.Container .Timer-Wrapper{
+    position: relative;
+    justify-content: space-between ;
+    display: flex;
+
+    
+    
+}
+.Timer-Wrapper .Timer-holder{
+    height: 100px;
+    width: 100px;
+    border: 3px solid #9b9a9a8e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ .Timer-holder .timer-clock{
+    font-size: 24px;
+
+}
+.Timer-holder .timer-subtitle{
+    font-size: 14px;
+    color: rgba(183, 196, 13, 0.726) ;
+    font-weight: 500;
+}
+.Container .Subscribe{
+    width: 100%;
+    align-self: center;
+    justify-self: flex-end;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.Subscribe .Email-input{
+    height: 40px;
+    width: 70%;
+    border-radius: 20px;
+    border :2px solid #046814ab
+
+}
+.Subscribe .btn-sub{
+    height: 40ox;
+    width: 25%;
+    border-radius: 20px;
+    border: none;
+    background-color:#039c1cab ;
+    color: antiquewhite;
+    font-size: 16px;
+}
+.Subscribe .btn-sub:hover{
+    background-color:#055012ab ;
+    cursor: pointer;
+}
