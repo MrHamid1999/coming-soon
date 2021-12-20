@@ -1,6 +1,6 @@
 window.addEventListener("load" , () =>{
  setInterval(() => {
-  var futurDate = new Date(new Date().getFullYear() + 1  , 0 , 1);
+  var futurDate = new Date(new Date().getFullYear() + 1  , 2 , 1);
   var nowDate = new Date();
    
   var delta =Math.abs(futurDate - nowDate)/1000;
